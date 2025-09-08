@@ -2,7 +2,7 @@ const Card = ({image, name, price, popular, rating, votes, inStock}) => {
 
     return (
         <div className="flex flex-col rounded-md overflow-hidden shadow-lg hover:scale-[1.02] transition-all duration-300 ease-in-out">
-            <div className="relative h-60 w-full rounded-md">
+            <div className="relative h-60 md:h-[60%] w-full rounded-md">
                 {popular && (
                     <span className="absolute top-[5%] left-[5%] px-3 py-1 text-base md:text-xs text-shadow-xs bg-[#F6C768] rounded-xl">
                         Popular
@@ -12,11 +12,11 @@ const Card = ({image, name, price, popular, rating, votes, inStock}) => {
             </div>
             <div className="flex flex-col gap-2 py-4 w-full h-[40%]">
                 <div className="flex flex-row justify-between items-center font-bold w-full">
-                    <div className="w-[60%] text-white text-[1rem]"><p>{name}</p></div>
+                    <div className="w-[60%] text-white text-[0.8rem]"><p>{name}</p></div>
                     <span className="text-[0.75rem] text-gray-500 block px-3 py-1 bg-[#BEE3CC] rounded-md">{price}</span>
                 </div>
                 <div className="flex flex-row w-full">
-                    <div className="text-gray-700 text-[0.875rem] w-[60%] flex flex-row">
+                    <div className="text-gray-700 text-[0.8rem] w-[60%] flex flex-row">
                         {typeof rating === "number" ? (
                             <span className="text-white">
                                 <i className="fa-solid fa-star text-yellow-400"></i> {rating.toFixed(1)}
