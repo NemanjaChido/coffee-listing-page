@@ -18,13 +18,24 @@ function App() {
         </section>
         <section className="h-[70%] w-full">
           <Routes>
-            <Route path='/' element={<AllProduct />} />
+            <Route path='/coffee-listing-page' element={<AllProduct />} />
             <Route path='/available' element={<Available />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </section>
       </div>
     </div>
   )
+}
+
+// Simple NotFound component to handle unmatched routes
+function NotFound() {
+  return (
+    <div>
+      <h2>404 - Page Not Found</h2>
+      <p>The page you're looking for doesn't exist.</p>
+    </div>
+  );
 }
 
 export default App

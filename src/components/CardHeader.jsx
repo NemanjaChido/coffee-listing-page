@@ -8,9 +8,9 @@ const CardHeader = () => {
                 from different roast types and origins, expertly roasted in small batches and shipped weekly.</p>
             <div className="w-full text-[0.875rem] flex flex-row items-center justify-center gap-2 py-2 mt-2">
                 <Link 
-                    to="/" 
+                    to="/coffee-listing-page" 
                     className={`px-3 py-2 rounded-md text-shadow-xs font-bold text-white
-                            ${location.pathname === '/' ? 'bg-[#4D5562]' : ''}`}>
+                            ${location.pathname === '/coffee-listing-page' ? 'bg-[#4D5562]' : ''}`}>
                     All Products
                 </Link>
                 <Link 
