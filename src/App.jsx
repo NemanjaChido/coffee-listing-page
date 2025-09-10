@@ -13,7 +13,7 @@ function App() {
         <img className="w-full h-full object-cover" src={imageLink} alt="bg-image"/>
       </div>
       <div className="w-[80%] h-[85%] flex flex-col gap-2 items-center justify-center z-10 bg-[#1B1D1F] rounded-md shadow-lg">
-        <section className="h-[25%] w-[80%] border border-amber-500 py-2">
+        <section className="h-[25%] w-[80%] py-2">
           <CardHeader />
         </section>
         <section className="h-[65%] w-[80%]">
