@@ -2,7 +2,7 @@ const Card = ({image, name, price, popular, rating, votes, inStock}) => {
 
     return (
         <div className="flex flex-col rounded-md overflow-hidden shadow-lg hover:scale-[1.02] transition-all duration-300 ease-in-out">
-            <div className="relative h-60 md:h-[60%] w-full rounded-md">
+            <div className="relative w-full rounded-md h-[70%]">
                 {popular && (
                     <span className="absolute top-[5%] left-[5%] px-3 py-1 text-base md:text-xs text-shadow-xs bg-[#F6C768] rounded-xl">
                         Popular
@@ -10,7 +10,7 @@ const Card = ({image, name, price, popular, rating, votes, inStock}) => {
                 )}
                 <img className="w-full h-full object-cover rounded-md" src={image} alt={name} />
             </div>
-            <div className="flex flex-col gap-2 py-4 w-full h-[40%]">
+            <div className="flex flex-col gap-2 py-2 w-full h-[30%]">
                 <div className="flex flex-row justify-between items-center font-bold w-full">
                     <div className="w-[60%] text-white text-[0.8rem]"><p>{name}</p></div>
                     <span className="text-[0.75rem] text-gray-500 block px-3 py-1 bg-[#BEE3CC] rounded-md">{price}</span>
