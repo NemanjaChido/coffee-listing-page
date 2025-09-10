@@ -27,7 +27,7 @@ const CoffeeList = ({coffees}) => {
     const displayCoffees = coffees || localCoffees;
 
     return (
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:grid-rows-2 p-2 h-full w-full">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:grid-rows-2 p-2 h-full w-full">
             {displayCoffees.map((coffee) => (
                 <Card key={coffee.id} {...coffee} />
             ))}
